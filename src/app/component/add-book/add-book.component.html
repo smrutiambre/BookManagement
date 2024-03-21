@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="image">
+                <img src="../../../assets/images/book-ladder.webp" class="img-fluid">
+
+            </div>
+        </div>
+        <!--form section-->
+        <div class="col-md-6">
+            <div class="card">
+                <h5>Add Book</h5>
+                <div class="row">
+                    <form [formGroup]="bookForm">
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Book Name</label>
+                            <input type="text" class="form-control" formControlName="bookName"
+                                placeholder="Enter book name">
+                        </div>
+                        <br />
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Author</label>
+                            <input type="text" class="form-control" formControlName="author" placeholder="Enter author">
+                        </div>
+                        <br />
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Ratings</label>
+                            <input type="text" class="form-control" formControlName="ratings"
+                                placeholder="Enter ratings">
+                        </div>
+                        <br />
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Publish Date</label>
+                            <input type="text" class="form-control" formControlName="publishDate"
+                                placeholder="Enter publish date">
+                        </div>
+                        <div class="text-center mt-2">
+                            <button type="submit" (click)="submitBook(this.bookForm.value)"
+                                [disabled]="this.bookForm.invalid" class="btn btn-primary">Submit</button>&nbsp;
+                            <button type="submit" routerLink="/booklist" class="btn btn-success">Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="image">
+                <img src="../../../assets/images/book-imagination.webp" class="img-fluid">
+
+            </div>
+        </div>
+        <!--form section-->
+        <div class="col-md-6">
+            <div class="card">
+                <h5>Update Book</h5>
+                <div class="row">
+                    <form>
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Book Name</label>
+                            <input type="text" [(ngModel)]="bookData.bookName" name="bookName" class="form-control"
+                                placeholder="Enter book name">
+                        </div>
+                        <br />
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Author</label>
+                            <input type="text" [(ngModel)]="bookData.author" name="author" class="form-control"
+                                placeholder="Enter author">
+                        </div>
+                        <br />
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Ratings</label>
+                            <input type="text" [(ngModel)]="bookData.ratings" name="ratings" class="form-control"
+                                placeholder="Enter ratings">
+                        </div>
+                        <br />
+                        <div class="form-group mb-1">
+                            <label for="exampleInputEmail1">Publish Date</label>
+                            <input type="text" [(ngModel)]="bookData.publishDate" name="publishDate"
+                                class="form-control" placeholder="Enter publish date">
+                        </div>
+                        <div class="text-center mt-2">
+                            <button type="submit" (click)="updatebook()" class="btn btn-primary">Update</button>&nbsp;
+                            <button type="submit" routerLink="/booklist" class="btn btn-success">Back</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
