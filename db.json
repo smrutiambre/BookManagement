@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": "75f9",
+      "bookName": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "ratings": "4.6",
+      "publishDate": "18 March 2003"
+    },
+    {
+      "id": "8cf7",
+      "bookName": "And Then There Were None",
+      "author": "Agatha Christie",
+      "ratings": "4.4",
+      "publishDate": "6 November 1939"
+    },
+    {
+      "id": "cc60",
+      "bookName": "The Whistler",
+      "author": "John Grisham ",
+      "ratings": "4.3",
+      "publishDate": "25 Oct 2016"
+    },
+    {
+      "id": "053b",
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "author": "J. K. Rowling",
+      "ratings": "4.8",
+      "publishDate": "26 June 1997"
+    },
+    {
+      "id": "0de6",
+      "bookName": "The Secret",
+      "author": "Rhonda Byrne",
+      "ratings": "4.6",
+      "publishDate": "November 2006"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
